@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !\.(?:css|js|jpg|gif|png)$ [NC]
+Options -Indexes
+RewriteRule ^/?$ login.php [NC,L]
+RewriteRule ^registrasi?$ regis.php [NC,L]
+
+RewriteRule ^ceklogin?$ views/check-login.php [NC,L]
+
+
